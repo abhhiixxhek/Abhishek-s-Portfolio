@@ -12,7 +12,7 @@ function AboutCard() {
             <br />
             A passionate <b className="purple">AI/ML enthusiast</b> currently interning at Mastersoft ERP Solutions Pvt. Ltd., where I train models and build intelligent systems.
             <br />
-            Currently pursuing my <b className="purple">B.Tech in Computer Science</b> from IIIT Nagpur, diving deep into AI, ML, and everything data-driven! 🚀
+            Currently pursuing my <b className="purple">Bachelor of Technology in Computer Science and Engineering</b> from Indian Institute of Information Technology, Nagpur🚀
             <br />
             <br />
             When I'm not busy making machines smarter, I'm busy making life more fun! Here's what I love to do:

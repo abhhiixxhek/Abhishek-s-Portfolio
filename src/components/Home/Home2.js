@@ -13,52 +13,51 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-      <Row>
+        <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              WHO AM <span className="purple"> I? 🤖🔥</span>
+            <h1 style={{ fontSize: "2.5em", fontWeight: "600" }}>
+              About <span className="purple">Me</span>
             </h1>
             <p className="home-about-body">
-              From the moment I stepped into <b className="purple">AI & Machine Learning</b>, there was no turning back—just an endless loop of innovation! 🚀
+              I'm <b className="purple">Abhishek Kumar</b>, an AI/ML enthusiast passionate about building intelligent systems and solving real-world problems with data.  
               <br />
-              <br />I craft <b className="purple">intelligent systems</b> using
+              <br />
+              With experience in <b className="purple">Machine Learning, NLP, and MLOps</b>, I work on designing scalable models, fine-tuning <b className="purple">Large Language Models</b>, and optimizing data-driven applications.
+              <br />
+              <br />
+              My tech stack includes:
               <i>
                 <b className="purple"> Python, SQL, C++, and Java</b>
-              </i>,
-              turning raw data into magic. ✨
+              </i>.  
+              I focus on ML/AI research, deep learning architectures, and making systems more efficient.  
               <br />
               <br />
-              Obsessed with <b className="purple">cutting-edge AI</b>, I fine-tune <b className="purple">Large Language Models</b>, build <b className="purple">scalable MLOps pipelines</b>, and push the boundaries of <b className="purple">Data Science, NLP, and Deep Learning</b>.
-              <br />
-              <br />
-              When I'm not busy making machines smarter, you'll find me:
+              Beyond work, I find inspiration in:
               <ul>
-                <li><b className="purple">Dominating the football field & sinking shots on the basketball court 🏀⚽</b></li>
-                <li><b className="purple">Discovering the best cafés & trying new food ☕🍽️</b></li>
-                <li><b className="purple">Mapping out my next travel adventure! 🌍🔥</b></li>
+                <li><b className="purple">Sports & Strategy</b> — A big fan of football and basketball. Competitive, on and off the field! 🏀⚽</li>
+                <li><b className="purple">Exploring Cafés</b> — Because great ideas start with good coffee. ☕🍽️</li>
+                <li><b className="purple">Travel & Adventure</b> — Exploring new places, cultures, and perspectives. 🌍</li>
               </ul>
             </p>
           </Col>
-          <Col md={4} className="">
+          <Col md={4} className="text-center">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
-        
+
         <Row>
-          <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
+          <Col md={12} className="home-about-social text-center">
+            <h1>Let's Connect</h1>
+            <p>Feel free to <span className="purple">reach out</span> and connect with me.</p>
+            <ul className="home-about-social-links d-flex justify-content-center">
               <li className="social-icons">
                 <a
                   href="https://github.com/abhhiixxhek"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -68,7 +67,7 @@ function Home2() {
                   href="https://x.com/awwyster"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
@@ -78,7 +77,7 @@ function Home2() {
                   href="https://www.linkedin.com/in/abhhiixxhek"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -100,4 +99,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
