@@ -34,10 +34,11 @@ function Home2() {
               <br />
               Beyond work, I find inspiration in:
               <ul>
-                <li><b className="purple">Sports & Strategy</b> — A big fan of football and basketball. Competitive, on and off the field! 🏀⚽</li>
-                <li><b className="purple">Exploring Cafés</b> — Because great ideas start with good coffee. ☕🍽️</li>
-                <li><b className="purple">Travel & Adventure</b> — Exploring new places, cultures, and perspectives. 🌍</li>
+                <li><b className="purple">Football & Basketball</b> — I enjoy the game, the teamwork, and the tactics behind it.</li>
+                <li><b className="purple">Café Hopping</b> — Always curious to try a new brew or local spot.</li>
+                <li><b className="purple">Traveling</b> — I like discovering new places without overplanning.</li>
               </ul>
+
             </p>
           </Col>
           <Col md={4} className="text-center">

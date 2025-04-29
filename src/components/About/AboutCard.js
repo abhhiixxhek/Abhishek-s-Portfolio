@@ -10,27 +10,27 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hey there! I'm <span className="purple">Abhishek Kumar</span> from <span className="purple">Mumbai, India.</span>
             <br />
-            A passionate <b className="purple">AI/ML enthusiast</b> currently interning at Mastersoft ERP Solutions Pvt. Ltd., where I train models and build intelligent systems.
+            A passionate <b className="purple">AI/ML enthusiast</b> currently interning at Mastersoft ERP Solutions Pvt. Ltd, where I train models and build intelligent systems.
             <br />
-            Currently pursuing my <b className="purple">Bachelor of Technology in Computer Science and Engineering</b> from Indian Institute of Information Technology, Nagpur🚀
+            Currently pursuing my <b className="purple">Bachelor of Technology in Computer Science and Engineering</b> from Indian Institute of Information Technology, Nagpur
             <br />
             <br />
             When I'm not busy making machines smarter, I'm busy making life more fun! Here's what I love to do:
           </p>
           <ul>
-            <li className="about-activity">
-              <ImPointRight /> <b className="purple">Owning the court & field</b>—whether it's football or basketball, I'm always up for a game! 🏀⚽
+          <li className="about-activity">
+              <ImPointRight /> <b className="purple">Playing sports</b>  usually football or basketball, always up for a good match.
             </li>
             <li className="about-activity">
-              <ImPointRight /> <b className="purple">Exploring cafés & trying new food</b>—because great ideas start over coffee! ☕🍔
-            </li>
-            
-            <li className="about-activity">
-              <ImPointRight /> <b className="purple">Cooking up experiments</b>—sometimes delicious, sometimes just science in the kitchen! 🍳😂
+              <ImPointRight /> <b className="purple">Exploring local cafés</b>  good food and better conversations.
             </li>
             <li className="about-activity">
-              <ImPointRight /> <b className="purple">Traveling with no fixed plan</b>—because the best journeys are unplanned! 🌍🔥
+              <ImPointRight /> <b className="purple">Experimenting in the kitchen</b>  trying out new recipes just for fun.
             </li>
+            <li className="about-activity">
+              <ImPointRight /> <b className="purple">Spontaneous travel</b> – I enjoy going places without a strict itinerary.
+            </li>
+
           </ul>
         </blockquote>
       </Card.Body>
