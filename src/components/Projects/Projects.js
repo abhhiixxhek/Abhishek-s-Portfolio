@@ -26,8 +26,8 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Stock Predictior Pro"
-              description="Built a stock prediction model using Monte Carlo simulations to analyze 5 years of market data, achieving 63% accuracy. Improved risk assessment with Value at Risk (VaR), reducing uncertainty in loss estimates by 15%!"
-              ghLink="https://github.com/abhhiixxhek/Stock-Analysis-and-Prediction"
+              description="A hybrid LSTM-ARIMA forecasting model achieved 70% accuracy in stock market analysis, utilizing key technical indicators like EMA, SMA, RSI, and MACD. These indicators captured momentum and mean-reversion signals, improving responsiveness and forecast stability. An LLM feedback loop automated parameter fine-tuning, boosting stakeholder confidence."
+              ghLink="https://stockpredictionn.streamlit.app/"
               
             />
           </Col>
