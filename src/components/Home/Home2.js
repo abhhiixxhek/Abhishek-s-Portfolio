@@ -22,7 +22,7 @@ function Home2() {
               I'm <b className="purple">Abhishek Kumar</b>, an AI/ML enthusiast passionate about building intelligent systems and solving real-world problems with data.  
               <br />
               <br />
-              With experience in <b className="purple">Machine Learning, NLP, and MLOps</b>, I work on designing scalable models, fine-tuning <b className="purple">Large Language Models</b>, and optimizing data-driven applications.
+              With experience in <b className="purple">Machine Learning, NLP, Artificial intelligence, LLMs and MLOps</b>, I work on designing scalable models, fine-tuning <b className="purple">Large Language Models</b>, and optimizing data-driven applications.
               <br />
               <br />
               My tech stack includes:

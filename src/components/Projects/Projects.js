@@ -6,7 +6,7 @@ import leaf from "../../Assets/Projects/deepquery.png";
 import emotion from "../../Assets/Projects/paperpal.png";
 import editor from "../../Assets/Projects/ocular.png";
 import chatify from "../../Assets/Projects/stockpredictor.png";
-//import suicide from "../../Assets/Projects/suicide.png";
+import flight from "../../Assets/Projects/flight.png";
 import bitsOfCode from "../../Assets/Projects/disha.png";
 
 function Projects() {
@@ -50,6 +50,17 @@ function Projects() {
               title="Ocular Disease Classifier"
               description="Built a powerful CNN-based eye disease classifier with 96% accuracy, leveraging VGG16, DenseNet, and ensemble learning to enhance predictions. Cutting-edge deep learning meets real-world healthcare impact! "
               ghLinkLink="https://github.com/abhhiixxhek/Eye-Disease-Classification"
+                           
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={flight}
+              isBlog={false}
+              title="Airlytics: Flight Booking Analytics"
+              description="Developed a smart Streamlit app for flight booking data analysis using Gemini LLM agents—automating data cleaning, enabling natural language insights, and simplifying CSV uploads/downloads. Where AI meets real-time data intelligence! "
+              ghLinkLink="https://github.com/abhhiixxhek/Airlytics"
                            
             />
           </Col>
