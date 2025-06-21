@@ -49,7 +49,7 @@ function Projects() {
               isBlog={false}
               title="Ocular Disease Classifier"
               description="Built a powerful CNN-based eye disease classifier with 96% accuracy, leveraging VGG16, DenseNet, and ensemble learning to enhance predictions. Cutting-edge deep learning meets real-world healthcare impact! "
-              ghLinkLink="https://github.com/abhhiixxhek/Eye-Disease-Classification"
+              ghLink="https://github.com/abhhiixxhek/Eye-Disease-Classification"
                            
             />
           </Col>
@@ -60,7 +60,7 @@ function Projects() {
               isBlog={false}
               title="Airlytics: Flight Booking Analytics"
               description="Developed a smart Streamlit app for flight booking data analysis using Gemini LLM agents—automating data cleaning, enabling natural language insights, and simplifying CSV uploads/downloads. Where AI meets real-time data intelligence! "
-              ghLinkLink="https://airlyticss.streamlit.app/"
+              ghLink="https://airlyticss.streamlit.app/"
                            
             />
           </Col>
