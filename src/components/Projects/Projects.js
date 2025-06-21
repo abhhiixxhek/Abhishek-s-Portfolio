@@ -60,7 +60,7 @@ function Projects() {
               isBlog={false}
               title="Airlytics: Flight Booking Analytics"
               description="Developed a smart Streamlit app for flight booking data analysis using Gemini LLM agents—automating data cleaning, enabling natural language insights, and simplifying CSV uploads/downloads. Where AI meets real-time data intelligence! "
-              ghLinkLink="https://github.com/abhhiixxhek/Airlytics"
+              ghLinkLink="https://airlyticss.streamlit.app/"
                            
             />
           </Col>
@@ -71,7 +71,7 @@ function Projects() {
               isBlog={false}
               title="DeepQuery"
               description="Dive into the world of AI, ML, and Data Science with an interactive Socratic assistant. Instead of just answers, get thought-provoking questions to enhance your understanding!"
-              ghLink="https://deepquery.onrender.com/"
+              ghLink="https://deepquerybyabhi.streamlit.app/"
               // demoLink="https://deepquery.onrender.com/"
             />
           </Col>
@@ -84,7 +84,7 @@ function Projects() {
               isBlog={false}
               title="PaperPal"
               description="ChatWithPDF is an AI-powered conversational assistant that allows users to interact with PDFs by extracting insights from text, tables, and figures."
-              ghLink="https://paperpal-q4gw.onrender.com/"
+              ghLink="https://paperpalbyabhi.streamlit.app/"
                
             />
           </Col>
