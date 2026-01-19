@@ -19,7 +19,7 @@ function Home2() {
               About <span className="purple">Me</span>
             </h1>
             <p className="home-about-body">
-              I'm <b className="purple">Abhishek Kumar</b>, an AI/ML enthusiast passionate about building intelligent systems and solving real-world problems with data.  
+              I'm <b className="purple">Abhishek Kumar</b>, an AI/ML enthusiast passionate about building intelligent systems and solving real-world problems with data.
               <br />
               <br />
               With experience in <b className="purple">Machine Learning, NLP, Artificial intelligence, LLMs and MLOps</b>, I work on designing scalable models, fine-tuning <b className="purple">Large Language Models</b>, and optimizing data-driven applications.
@@ -28,8 +28,8 @@ function Home2() {
               My tech stack includes:
               <i>
                 <b className="purple"> Python, SQL, C++, and Java</b>
-              </i>.  
-              I focus on ML/AI research, deep learning architectures, and making systems more efficient.  
+              </i>.
+              I focus on AI/ML research, deep learning architectures, and making systems more efficient.
               <br />
               <br />
               Beyond work, I find inspiration in:

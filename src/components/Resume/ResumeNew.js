@@ -37,7 +37,7 @@ function ResumeNew() {
           </Document>
         </Row>
 
-       
+
       </Container>
     </div>
   );

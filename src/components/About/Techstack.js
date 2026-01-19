@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiPython, DiJava, DiMysql } from "react-icons/di";
 import { SiTensorflow, SiFlask, SiDocker, SiDvc, SiMlflow, SiPowerbi, SiFastapi, SiMongodb } from "react-icons/si";
-import { FaBrain, FaDatabase } from "react-icons/fa"; // Alternatives for Pinecone
+import { FaDatabase } from "react-icons/fa"; // Alternatives for Pinecone
 
 function Techstack() {
   return (
