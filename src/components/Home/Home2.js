@@ -8,6 +8,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiMedium } from "react-icons/si";
+import TechTrivia from "../TechTrivia";
 
 function Home2() {
   return (
@@ -47,7 +49,9 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
-
+      </Container>
+      <TechTrivia />
+      <Container>
         <Row>
           <Col md={12} className="home-about-social text-center">
             <h1>Let's Connect</h1>
@@ -91,6 +95,16 @@ function Home2() {
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://medium.com/@abhiishekwrites"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiMedium />
                 </a>
               </li>
             </ul>
