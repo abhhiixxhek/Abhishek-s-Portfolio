@@ -648,8 +648,24 @@ button:focus {
   border-radius: 5px !important;
   display: table !important;
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
-  overflow: hidden !important;
+  overflow: visible !important;
   transition: transform 300ms ease, box-shadow 300ms ease, border 300ms ease !important;
+  position: relative !important;
+}
+
+.tech-icons::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.22em;
+  color: #c770f0;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 200ms ease;
+  pointer-events: none;
+  font-weight: 500;
 }
 
 @media (max-width: 767px) {
@@ -660,10 +676,14 @@ button:focus {
 
 .tech-icons:hover {
   transform: rotate(5deg) scale(1.1) !important;
-  overflow: hidden !important;
+  overflow: visible !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
   box-shadow: 0 0 8px rgba(199, 112, 240, 0.6) !important;
   animation: tech-icon-pulse 1.5s ease-in-out infinite !important;
+}
+
+.tech-icons:hover::after {
+  opacity: 1;
 }
 
 @keyframes tech-icon-pulse {

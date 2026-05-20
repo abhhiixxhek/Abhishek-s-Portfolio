@@ -1,49 +1,49 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiPython, DiJava, DiMysql } from "react-icons/di";
-import { SiTensorflow, SiFlask, SiDocker, SiDvc, SiMlflow, SiPowerbi, SiFastapi, SiMongodb } from "react-icons/si";
-import { FaDatabase } from "react-icons/fa"; // Alternatives for Pinecone
+import { DiPython, DiJava } from "react-icons/di";
+import { SiTensorflow, SiDocker, SiMlflow, SiFastapi, SiMongodb } from "react-icons/si";
+import { FaDatabase, FaBrain, FaProjectDiagram, FaRobot, FaLink } from "react-icons/fa";
 import ScrollReveal from "../animations/ScrollReveal";
 
 function Techstack() {
   return (
     <ScrollReveal stagger={true} staggerDelay={0.08}>
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" data-label="Python">
           <DiPython />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" data-label="Java">
           <DiJava />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <DiMysql />
+        <Col xs={4} md={2} className="tech-icons" data-label="LangChain">
+          <FaLink />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" data-label="LangGraph">
+          <FaProjectDiagram />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons" data-label="TensorFlow">
           <SiTensorflow />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiFlask />
+        <Col xs={4} md={2} className="tech-icons" data-label="FastAPI">
+          <SiFastapi />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" data-label="Docker">
           <SiDocker />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiDvc />
-        </Col>
-        <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons" data-label="MLflow">
           <SiMlflow />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiFastapi /> {/* Alternative for LangChain */}
+        <Col xs={4} md={2} className="tech-icons" data-label="RAG / Agentic AI">
+          <FaRobot />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiPowerbi />
+        <Col xs={4} md={2} className="tech-icons" data-label="System Design">
+          <FaBrain />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <SiMongodb /> {/* If Pinecone is used with MongoDB */}
+        <Col xs={4} md={2} className="tech-icons" data-label="MongoDB">
+          <SiMongodb />
         </Col>
-        <Col xs={4} md={2} className="tech-icons">
-          <FaDatabase /> {/* Alternative for Pinecone */}
+        <Col xs={4} md={2} className="tech-icons" data-label="Vector DBs">
+          <FaDatabase />
         </Col>
       </Row>
     </ScrollReveal>
