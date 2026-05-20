@@ -7,9 +7,9 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
+import ScrollReveal from "./animations/ScrollReveal";
 
 function Footer() {
-
   return (
     <Container fluid className="footer">
       <Row>
@@ -21,58 +21,55 @@ function Footer() {
         </Col>
 
         <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/abhhiixxhek"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://x.com/awwyster"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/abhhiixxhek"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/abhhiixxhek"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://medium.com/@abhiishekwrites"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <SiMedium />
-              </a>
-            </li>
-          </ul>
+          <ScrollReveal stagger={true} staggerDelay={0.1} duration={0.3}>
+            <ul className="footer-icons">
+              <li className="social-icons footer-social-icon">
+                <a
+                  href="https://github.com/abhhiixxhek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons footer-social-icon">
+                <a
+                  href="https://x.com/awwyster"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiOutlineTwitter />
+                </a>
+              </li>
+              <li className="social-icons footer-social-icon">
+                <a
+                  href="https://www.linkedin.com/in/abhhiixxhek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons footer-social-icon">
+                <a
+                  href="https://www.instagram.com/abhhiixxhek"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillInstagram />
+                </a>
+              </li>
+              <li className="social-icons footer-social-icon">
+                <a
+                  href="https://medium.com/@abhiishekwrites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiMedium />
+                </a>
+              </li>
+            </ul>
+          </ScrollReveal>
         </Col>
       </Row>
     </Container>

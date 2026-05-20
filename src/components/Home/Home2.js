@@ -10,8 +10,11 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiMedium } from "react-icons/si";
 import TechTrivia from "../TechTrivia";
+import useMobileOptimization from "../../hooks/useMobileOptimization";
 
 function Home2() {
+  const { disableParallax } = useMobileOptimization();
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -44,7 +47,7 @@ function Home2() {
             </p>
           </Col>
           <Col md={4} className="text-center">
-            <Tilt>
+            <Tilt tiltEnable={!disableParallax}>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
           </Col>
@@ -89,7 +92,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/abhhiixxhek"
+                  href="https://www.instagram.com/abhiishek.ai"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

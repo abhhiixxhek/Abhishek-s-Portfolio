@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
+import ScrollReveal from "../animations/ScrollReveal";
 import leaf from "../../Assets/Projects/deepquery.png";
 import emotion from "../../Assets/Projects/paperpal.png";
 import editor from "../../Assets/Projects/ocular.png";
@@ -20,6 +21,7 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+        <ScrollReveal stagger={true} staggerDelay={0.15}>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
@@ -89,6 +91,7 @@ function Projects() {
             />
           </Col>
         </Row>
+        </ScrollReveal>
       </Container>
     </Container>
   );

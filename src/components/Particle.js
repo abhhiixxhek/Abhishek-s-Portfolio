@@ -1,14 +1,17 @@
 import React from "react";
 import Particles from "react-tsparticles";
+import useMobileOptimization from "../hooks/useMobileOptimization";
 
 function Particle() {
+  const { particleDensity } = useMobileOptimization(160);
+
   return (
     <Particles
       id="tsparticles"
       params={{
         particles: {
           number: {
-            value: 160,
+            value: particleDensity,
             density: {
               enable: true,
               value_area: 1500,

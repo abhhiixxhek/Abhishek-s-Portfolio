@@ -1,26 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { motion } from "framer-motion";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Blogs from "./components/Blogs/Blogs";
-import Contact from "./components/Contact/Contact";
-import Resume from "./components/Resume/ResumeNew";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import AnimatedRoutes from "./components/animations/AnimatedRoutes";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
+  const [preloaderExited, setPreloaderExited] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -30,23 +22,37 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const handlePreloaderExitComplete = useCallback(() => {
+    setPreloaderExited(true);
+  }, []);
+
+  // Content fade-in: opacity 0→1 over 500ms with 200ms delay after preloader exits
+  const contentVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.5, ease: "easeIn", delay: 0.2 }
+    }
+  };
+
   return (
     <Router>
-      <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      <Preloader load={load} onExitComplete={handlePreloaderExitComplete} />
+      <motion.div
+        className="App"
+        id={load ? "no-scroll" : "scroll"}
+        initial="hidden"
+        animate={preloaderExited ? "visible" : "hidden"}
+        variants={contentVariants}
+        style={{
+          pointerEvents: preloaderExited ? "auto" : "none"
+        }}
+      >
         <Navbar />
         <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
+        <AnimatedRoutes />
         <Footer />
-      </div>
+      </motion.div>
     </Router>
   );
 }
