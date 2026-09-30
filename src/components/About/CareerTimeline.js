@@ -14,7 +14,7 @@ const timelineData = [
     startDate: "Aug 2025",
     endDate: null,
     description:
-      "Building RAG-based Compliance Auditor, Supplier Scout Automation Agent, Human-to-SQL Autonomous Agent, and AI Patent Retrieval systems for production use.",
+      "Engineered DMart's product search on AWS OpenSearch with semantic query rewriting for relevance-aware, natural-language retrieval, backed by an event-driven catalog indexing pipeline (S3, EventBridge, Lambda, Step Functions) syncing multiple store catalogs. Also building RAG-based Compliance Auditor, Supplier Scout Automation Agent, Human-to-SQL Autonomous Agent, and AI Patent Retrieval systems for production use.",
   },
   {
     id: "2",
@@ -125,7 +125,7 @@ function CareerTimeline({ entries = timelineData }) {
                       {formatDateRange(entry.startDate, entry.endDate)}
                     </span>
                     <p className="career-timeline-description">
-                      {truncateDescription(entry.description, 200)}
+                      {truncateDescription(entry.description, 600)}
                     </p>
                   </div>
                 </div>
